@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">  
+    <title>Conversor de Dólar</title>
+</head>
+<body>
+    <h1>Conversor de Dólar</h1>
+
+    <h2>Exercício 1</h2>
+    <label for="dolar1">Valor em dólares:</label>
+    <input type="number" id="dolar1" step="0.01">
+    <button onclick="calcularDolar1()">Converter</button>
+    <h4>Valor em reais: <input type="text" id="resultado1" readonly></h4>
+
+    <h2>Exercício 2</h2>
+    <label for="dolar2">Valor em dólares:</label>
+    <input type="number" id="dolar2" step="0.01">
+    <label for="taxa2">Valor do dólar:</label>
+    <input type="number" id="taxa2" step="0.01">
+    <button onclick="calcularDolar2()">Converter</button>
+    <h4>Valor em reais: <input type="text" id="resultado2" readonly></h4>
+
+    <h2>Exercício 3</h2>
+    <label for="valor3">Valor:</label>
+    <input type="number" id="valor3" step="0.01">
+    <label for="taxa3">Valor do dólar:</label>
+    <input type="number" id="taxa3" step="0.01">
+    <label for="tipo3">Tipo:</label>
+    <select id="tipo3">
+        <option value="dolar">Dólar</option>
+        <option value="real">Real</option>
+    </select>
+    <button onclick="calcularConversao()">Converter</button>
+    <h4>Valor convertido: <input type="text" id="resultado3" readonly></h4>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
